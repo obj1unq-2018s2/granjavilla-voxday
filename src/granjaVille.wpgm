@@ -13,7 +13,8 @@ program farmville {
  
  // teclas que quiero que reacciones
  keyboard.m().onPressDo { hector.plantaMaiz()}
- // keyboard.t().onPressD { hector.plantaTrigo()}
+ keyboard.t().onPressDo { hector.plantaTrigo()}
+ keyboard.o().onPressDo { hector.plantaTomaco()}
  
  // esto no hay que olvidarlo
  game.start()
