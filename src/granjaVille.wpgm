@@ -1,0 +1,21 @@
+import wollok.game.*
+import hector.*
+
+program farmville {
+
+ game.title("Farmville")
+ game.height(10)
+ game.width(10)
+ game.ground("ground.png")
+ 
+ // personajes que quiere agregar
+ game.addVisualCharacter(hector)
+ 
+ // teclas que quiero que reacciones
+ keyboard.m().onPressDo { hector.plantaMaiz()}
+ // keyboard.t().onPressD { hector.plantaTrigo()}
+ 
+ // esto no hay que olvidarlo
+ game.start()
+
+}
